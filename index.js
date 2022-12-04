@@ -10,8 +10,7 @@ const ObjectId = require("mongodb").ObjectId;
 app.use(cors());
 app.use(express.json());
 
-//name : product_server_crud
-// pass : 8VsP1yBnfO5AkJIl
+
 
 const uri = `mongodb+srv://${process.env.SECRET_KEY}:${process.env.SECRET_HASH}@cluster0.nrvwj.mongodb.net/?retryWrites=true&w=majority`;
 const client = new MongoClient(uri, {
